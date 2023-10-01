@@ -1,0 +1,53 @@
+<%- include("partials/header.ejs") %>
+<div class="title-header">
+    <p class="dateting"><%= Day %></p>
+</div>
+<div class="myContainer">
+    <% if (locals.array){ %>
+        <% for(let i = 0;i<array.length;i++ ){%>
+            <% if(array[i].length === 1){%>
+                <div class="fake"></div>
+            <%}else{%>
+                <div class="box">
+                    <form class ="beegbox" action="/delete-normal" method="POST">
+                        <input type="image" src="Images/icons8-minus-48.png" class="minus" name="" id="">
+                        <input type="hidden" name="taskList" value="<%= array[i] %>">
+                        <p class="text"><%= array[i] %></p>
+                    </form>
+                </div>
+            <%}%>
+        <%} %>
+    <%}else if (locals.arrayTwo){ %>
+        <% for(let z = 0;z<arrayTwo.length;z++ ){%>
+            <% if(arrayTwo[z].length === 1){%>
+                <div class="fake"></div>
+            <%}else{%>
+                <div class="box">
+                    <form class ="beegbox" action="/delete-work" method="POST">
+                        <input type="image" src="Images/icons8-minus-48.png" class="minus" name="" id="">
+                        <input type="hidden" name="taskList" value="<%= arrayTwo[z] %>">
+                        <p class="text"><%= arrayTwo[z] %></p>
+                    </form>
+                </div>
+            <%}%>
+        <%} %>
+    <%}else{%>
+
+    <%} %>
+    <div class="box1">
+        <% if (locals.Comparer){ %>
+            <form action="/submit" method="POST" class="former">
+                <input class="tingman" type="text" name="listItem" id="firstName" placeholder="New Item">
+                <input type="image" src="Images/icons8-plus-50.png" class="ting">
+            </form>
+        <%}else{%>
+            <form action="/work-submit" method="POST" class="former">
+                <input class="tingman" type="text" name="listItem" id="firstName" placeholder="New Item">
+                <input type="image" src="Images/icons8-plus-50.png" class="ting">
+            </form>
+        <%} %>
+    </div>
+</div>
+
+
+<%- include("partials/footer.ejs") %>

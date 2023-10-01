@@ -1,0 +1,114 @@
+
+img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+li{
+    list-style: none;
+}
+.navbar-brand{
+    font-family: 'Raleway', sans-serif;
+}
+.myContainer{
+    margin-left: 40%;
+    margin-top: 3rem;
+    margin-right:50% ;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6rem;
+    width: 20rem;
+    background-color: 	#3b444b;
+    border-radius: 6px;
+    gap: 2rem;
+    margin-top: 2px;
+    padding: 10px;
+}
+.text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    position: relative;
+    top: 5.5px;
+    color: white;
+
+}
+.title-header{
+    margin-left: 40%;
+    margin-top: 7rem;
+    margin-right:50% ;
+    height: 6rem;
+    width: 20rem;
+    background-color: 	#3b444b;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.dateting{
+    position: relative;
+    top: 20%;
+    color: white;
+}
+.ting{
+    height: 50px;
+    width:50px;
+    cursor: pointer;
+}
+.tingman{
+    border: none;
+    border-bottom:1px dotted red ;
+    background-color: 	#3b5a70;
+    color: white;
+}
+.classanonymous{
+    border: none;
+    border-bottom: 2px solid red;
+}
+.tingman:focus {outline: none; }
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6rem;
+    width: 20rem;
+    background-color: 	#3b5a70;
+    border-radius: 6px;
+    gap: 2rem;
+    margin-top: 2px;
+    padding: 10px;
+}
+.former{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+::placeholder{
+    color: white;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+.fake{
+    display: none;
+}
+.beegbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.minus{
+    height: 1.5rem;
+    width: 1.5rem;
+}
