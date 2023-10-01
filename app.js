@@ -1,6 +1,5 @@
 import express from "express";
 import bodyParser from "body-parser";
-const port = 27017;
 const app = express();
 import mongoose from "mongoose";
 mongoose.connect("mongodb+srv://test:test@cluster0.i3frtxy.mongodb.net/CapstoneDB");
@@ -165,7 +164,11 @@ app.post("/delete-work",(req,res) =>{
         Day: haiKuch
     })
 })
-      
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 app.listen(port,() =>{
     console.log(`Server is running on port ${port}`);
