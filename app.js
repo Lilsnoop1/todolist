@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 const app = express();
 import mongoose from "mongoose";
-mongoose.connect("mongodb+srv://test:test@cluster0.i3frtxy.mongodb.net/CapstoneDB");
+mongoose.connect("mongodb+srv://ammar:ammar@cluster0.vuzjvhx.mongodb.net/CapstoneDB");
 
 const normalListSchema = mongoose.Schema({
     item: {
